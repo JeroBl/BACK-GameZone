@@ -2,6 +2,8 @@ const NP = require('number-precision');
 const { Games, Developers, Languages, Platforms, Genres, Categories, Images, Videos, Reviews, Users } = require("../db");
 require('dotenv').config();
 
+
+
 const allGames = async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 1;
